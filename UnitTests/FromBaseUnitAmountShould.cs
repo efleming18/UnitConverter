@@ -10,9 +10,16 @@ namespace UnitTests
    [TestFixture]
    class FromBaseUnitAmountShould
    {
+      Dictionary<string, double> toMeterRatio;
+
+      [SetUp]
+      public void SetUp()
+      {
+         toMeterRatio = new Dictionary<string, double>();
+      }
+
       [Test]
       public void ReturnFourKilometersFromFourThousandMeters() {
-         var toMeterRatio = new Dictionary<string, double>();
          toMeterRatio.Add("kilometer", 1000);
 
          var unitAdjuster = new UnitAdjuster(toMeterRatio);
@@ -24,7 +31,6 @@ namespace UnitTests
       [Test]
       public void ReturnSevenHundredCentimetersFromSevenMeters()
       {
-         var toMeterRatio = new Dictionary<string, double>();
          toMeterRatio.Add("centimeter", .01);
 
          var unitAdjuster = new UnitAdjuster(toMeterRatio);
