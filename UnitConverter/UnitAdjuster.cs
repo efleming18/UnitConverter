@@ -6,15 +6,21 @@ namespace UnitConverter
 {
    public class UnitAdjuster
    {
-      public Dictionary<string, double> ToBaseUnitRatio;
+      private Dictionary<string, double> ToBaseUnitRatio;
 
       public UnitAdjuster(Dictionary<string, double> toBaseUnitRatio)
       {
          ToBaseUnitRatio = toBaseUnitRatio;
       }
 
-      public double ToBaseUnitAmount(Unit unit) {
+      public double ToBaseUnitAmount(Unit unit) 
+      {
          return unit.Quantity * ToBaseUnitRatio[unit.Name]; 
+      }
+
+      public double FromBaseUnitAmount(double baseUnitQuantity, string targetUnitName)
+      {
+         return baseUnitQuantity / ToBaseUnitRatio[targetUnitName];
       }
    }
 }

@@ -34,16 +34,28 @@ namespace UnitTests
        }
 
        [Test]
-       public void Return1609Point34MetersWhenGivenOneMile()
+       public void ReturnPointZeroZeroOneMetersWhenGivenOneMilimeter()
        {
-          toMeterRatio.Add("mile", 1609.34);
+          toMeterRatio.Add("milimeter", .001);
           Mock.Arrange(() => mockedUnit.Quantity).Returns(1);
-          Mock.Arrange(() => mockedUnit.Name).Returns("mile");
+          Mock.Arrange(() => mockedUnit.Name).Returns("milimeter");
 
           var unitAdjuster = new UnitAdjuster(toMeterRatio);
           var newUnitQuantity = unitAdjuster.ToBaseUnitAmount(mockedUnit);
 
-          Assert.AreEqual(1609.34, newUnitQuantity);
+          Assert.AreEqual(.001, newUnitQuantity);
+       }
+
+       [Test]
+       public void ReturnFourThousandMetersWhenGivenFourKilometers() {
+          toMeterRatio.Add("kilometer", 1000);
+          Mock.Arrange(() => mockedUnit.Quantity).Returns(4);
+          Mock.Arrange(() => mockedUnit.Name).Returns("kilometer");
+
+          var unitAdjuster = new UnitAdjuster(toMeterRatio);
+          var newUnitQuantity = unitAdjuster.ToBaseUnitAmount(mockedUnit);
+
+          Assert.AreEqual(4000, newUnitQuantity);
        }
     }
 }
