@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using UnitConverter.Models;
 
-namespace UnitConverter
+namespace UnitConverter.Logic
 {
    public class UnitAdjuster
    {
@@ -15,12 +15,12 @@ namespace UnitConverter
 
       public double ToBaseUnitAmount(Unit unit) 
       {
-         return unit.Quantity * databaseAccessor.GetRatioComparedToBaseUnit(unit.Name);
+         return unit.Quantity * databaseAccessor.GetBaseUnitRatioFromUnitName(unit.Name);
       }
 
-      public double FromBaseUnitAmount(double baseUnitQuantity, string targetUnit)
+      public double FromBaseUnitAmount(double baseUnitQuantity, string targetUnitName)
       {
-         return baseUnitQuantity / databaseAccessor.GetRatioComparedToBaseUnit(targetUnit);
+         return baseUnitQuantity / databaseAccessor.GetBaseUnitRatioFromUnitName(targetUnitName);
          
       }
    }

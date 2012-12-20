@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace UnitConverter
+namespace UnitConverter.Models
 {
    public class Unit
    {

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using Telerik.JustMock;
-using UnitConverter;
+using UnitConverter.Logic;
+using UnitConverter.Models;
 
-namespace UnitTests
+namespace UnitTests.UnitAdjusterTests 
 {
     [TestFixture]
     public class ToBaseUnitAmountShould
@@ -24,7 +25,7 @@ namespace UnitTests
        [Test]
        public void ReturnSevenMetersWhenGivenSevenMeters()
        {
-          Mock.Arrange(() => mockedDatabaseAccessor.GetRatioComparedToBaseUnit("meter")).Returns(1);
+          Mock.Arrange(() => mockedDatabaseAccessor.GetBaseUnitRatioFromUnitName("meter")).Returns(1);
 
           Mock.Arrange(() => mockedUnit.Quantity).Returns(7);
           Mock.Arrange(() => mockedUnit.Name).Returns("meter");
@@ -38,7 +39,7 @@ namespace UnitTests
        [Test]
        public void ReturnPointZeroZeroOneMetersWhenGivenOneMilimeter()
        {
-          Mock.Arrange(() => mockedDatabaseAccessor.GetRatioComparedToBaseUnit("milimeter")).Returns(.001);
+          Mock.Arrange(() => mockedDatabaseAccessor.GetBaseUnitRatioFromUnitName("milimeter")).Returns(.001);
 
           Mock.Arrange(() => mockedUnit.Quantity).Returns(1);
           Mock.Arrange(() => mockedUnit.Name).Returns("milimeter");
@@ -52,7 +53,7 @@ namespace UnitTests
        [Test]
        public void ReturnFourThousandMetersWhenGivenFourKilometers() 
        {
-          Mock.Arrange(() => mockedDatabaseAccessor.GetRatioComparedToBaseUnit("kilometer")).Returns(1000);
+          Mock.Arrange(() => mockedDatabaseAccessor.GetBaseUnitRatioFromUnitName("kilometer")).Returns(1000);
 
           Mock.Arrange(() => mockedUnit.Quantity).Returns(4);
           Mock.Arrange(() => mockedUnit.Name).Returns("kilometer");
