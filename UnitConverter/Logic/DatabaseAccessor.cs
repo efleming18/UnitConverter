@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Linq;
+using UnitConverter.Interfaces;
 using UnitConverter.Models;
 
 namespace UnitConverter.Logic
 {
-   public class DatabaseAccessor
+   public class DatabaseAccessor : IDatabaseAccessor
    {
       private UnitConverterContext database;
 

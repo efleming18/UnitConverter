@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Linq;
+using UnitConverter.Interfaces;
 using UnitConverter.Models;
 
 namespace UnitConverter.Logic
 {
    public class UnitAdjuster
    {
-      private DatabaseAccessor databaseAccessor;
+      private IDatabaseAccessor databaseAccessor;
 
-      public UnitAdjuster(DatabaseAccessor databaseAccessor)
+      public UnitAdjuster(IDatabaseAccessor databaseAccessor)
       {
          this.databaseAccessor = databaseAccessor;
       }

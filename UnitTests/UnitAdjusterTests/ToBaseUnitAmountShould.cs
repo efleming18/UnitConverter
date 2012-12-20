@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using Telerik.JustMock;
+using UnitConverter.Interfaces;
 using UnitConverter.Logic;
 using UnitConverter.Models;
 
@@ -12,14 +13,14 @@ namespace UnitTests.UnitAdjusterTests
     public class ToBaseUnitAmountShould
     {
        Unit mockedUnit;
-       DatabaseAccessor mockedDatabaseAccessor;
+       IDatabaseAccessor mockedDatabaseAccessor;
        Dictionary<string, double> toMeterRatio;
 
        [SetUp]
        public void SetUp()
        {
           mockedUnit = Mock.Create<Unit>();
-          mockedDatabaseAccessor = Mock.Create<DatabaseAccessor>();
+          mockedDatabaseAccessor = Mock.Create<IDatabaseAccessor>();
        }
 
        [Test]

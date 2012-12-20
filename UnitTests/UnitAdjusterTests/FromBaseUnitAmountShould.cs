@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using Telerik.JustMock;
+using UnitConverter.Interfaces;
 using UnitConverter.Logic;
 using UnitConverter.Models;
 
@@ -11,12 +12,12 @@ namespace UnitTests.UnitAdjusterTests
    [TestFixture]
    class FromBaseUnitAmountShould
    {
-      DatabaseAccessor mockedDatabaseAccessor;
+      IDatabaseAccessor mockedDatabaseAccessor;
 
       [SetUp]
       public void SetUp()
       {
-         mockedDatabaseAccessor = Mock.Create<DatabaseAccessor>();
+         mockedDatabaseAccessor = Mock.Create<IDatabaseAccessor>();
       }
 
       [Test]

@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IDatabaseAccessor.cs" />
     <Compile Include="Logic\DatabaseAccessor.cs" />
     <Compile Include="Models\Unit.cs" />
     <Compile Include="Models\UnitConverterContext.cs" />
