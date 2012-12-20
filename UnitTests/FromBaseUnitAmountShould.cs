@@ -11,10 +11,12 @@ namespace UnitTests
    class FromBaseUnitAmountShould
    {
       Dictionary<string, double> toMeterRatio;
+      DatabaseAccessor mockedDatabaseAccessor;
 
       [SetUp]
       public void SetUp()
       {
+         mockedDatabaseAccessor = Mock.Create<DatabaseAccessor>();
          toMeterRatio = new Dictionary<string, double>();
       }
 
@@ -37,6 +39,17 @@ namespace UnitTests
          var newUnitValue = unitAdjuster.FromBaseUnitAmount(7, "centimeter");
 
          Assert.AreEqual(700, newUnitValue);
+      }
+
+      [Test]
+      public void ReturnPointZeroZeroTwoKilogramsFromTwoGrams()
+      {
+         Mock.Arrange(() => mockedDatabaseAccessor.GetRatioComparedToBaseUnit("Kilograms")).Returns(1000);
+         var unitAdjuster = new UnitAdjuster(mockedDatabaseAccessor);
+
+         var newUnitValue = unitAdjuster.FromBaseUnitAmount(2, "Kilograms");
+
+         Assert.AreEqual(.002, newUnitValue);
       }
    }
 }
