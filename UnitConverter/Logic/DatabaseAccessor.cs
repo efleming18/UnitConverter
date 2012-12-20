@@ -16,8 +16,7 @@ namespace UnitConverter.Logic
 
       public double GetBaseUnitRatioFromUnitName(string unitName)
       {
-         var unitRatio = database.UnitRatio.Find(unitName);
-         return unitRatio.Ratio;
+         return database.UnitRatio.Find(unitName).Ratio;
       }
    }
 }
