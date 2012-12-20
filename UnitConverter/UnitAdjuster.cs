@@ -6,28 +6,21 @@ namespace UnitConverter
 {
    public class UnitAdjuster
    {
-      private Dictionary<string, double> ToBaseUnitRatio;
-      private DatabaseAccessor DatabaseAccessor;
-
-      public UnitAdjuster(Dictionary<string, double> toBaseUnitRatio)
-      {
-         ToBaseUnitRatio = toBaseUnitRatio;
-      }
+      private DatabaseAccessor databaseAccessor;
 
       public UnitAdjuster(DatabaseAccessor databaseAccessor)
       {
-         DatabaseAccessor = databaseAccessor;
+         this.databaseAccessor = databaseAccessor;
       }
 
       public double ToBaseUnitAmount(Unit unit) 
       {
-         return unit.Quantity * ToBaseUnitRatio[unit.Name]; 
+         return unit.Quantity * databaseAccessor.GetRatioComparedToBaseUnit(unit.Name);
       }
 
       public double FromBaseUnitAmount(double baseUnitQuantity, string targetUnit)
       {
-         return (ToBaseUnitRatio != null) ? baseUnitQuantity / ToBaseUnitRatio[targetUnit]
-                                        : baseUnitQuantity / DatabaseAccessor.GetRatioComparedToBaseUnit(targetUnit);
+         return baseUnitQuantity / databaseAccessor.GetRatioComparedToBaseUnit(targetUnit);
          
       }
    }

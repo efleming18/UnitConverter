@@ -10,21 +10,19 @@ namespace UnitTests
    [TestFixture]
    class FromBaseUnitAmountShould
    {
-      Dictionary<string, double> toMeterRatio;
       DatabaseAccessor mockedDatabaseAccessor;
 
       [SetUp]
       public void SetUp()
       {
          mockedDatabaseAccessor = Mock.Create<DatabaseAccessor>();
-         toMeterRatio = new Dictionary<string, double>();
       }
 
       [Test]
       public void ReturnFourKilometersFromFourThousandMeters() {
-         toMeterRatio.Add("kilometer", 1000);
+         Mock.Arrange(() => mockedDatabaseAccessor.GetRatioComparedToBaseUnit("kilometer")).Returns(1000);
 
-         var unitAdjuster = new UnitAdjuster(toMeterRatio);
+         var unitAdjuster = new UnitAdjuster(mockedDatabaseAccessor);
          var newUnitValue = unitAdjuster.FromBaseUnitAmount(4000, "kilometer");
 
          Assert.AreEqual(4, newUnitValue);
@@ -33,9 +31,9 @@ namespace UnitTests
       [Test]
       public void ReturnSevenHundredCentimetersFromSevenMeters()
       {
-         toMeterRatio.Add("centimeter", .01);
+         Mock.Arrange(() => mockedDatabaseAccessor.GetRatioComparedToBaseUnit("centimeter")).Returns(.01);
 
-         var unitAdjuster = new UnitAdjuster(toMeterRatio);
+         var unitAdjuster = new UnitAdjuster(mockedDatabaseAccessor);
          var newUnitValue = unitAdjuster.FromBaseUnitAmount(7, "centimeter");
 
          Assert.AreEqual(700, newUnitValue);
