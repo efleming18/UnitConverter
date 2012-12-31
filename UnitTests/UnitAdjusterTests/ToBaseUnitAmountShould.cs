@@ -14,7 +14,7 @@ namespace UnitTests.UnitAdjusterTests
     {
        Unit mockedUnit;
        IDatabaseAccessor mockedDatabaseAccessor;
-       Dictionary<string, double> toMeterRatio;
+       readonly Dictionary<string, double> toMeterRatio;
 
        [SetUp]
        public void SetUp()
@@ -38,12 +38,12 @@ namespace UnitTests.UnitAdjusterTests
        }
 
        [Test]
-       public void ReturnPointZeroZeroOneMetersWhenGivenOneMilimeter()
+       public void ReturnPointZeroZeroOneMetersWhenGivenOneMillimeter()
        {
-          Mock.Arrange(() => mockedDatabaseAccessor.GetBaseUnitRatioFromUnitName("milimeter")).Returns(.001);
+          Mock.Arrange(() => mockedDatabaseAccessor.GetBaseUnitRatioFromUnitName("millimeter")).Returns(.001);
 
           Mock.Arrange(() => mockedUnit.Quantity).Returns(1);
-          Mock.Arrange(() => mockedUnit.Name).Returns("milimeter");
+          Mock.Arrange(() => mockedUnit.Name).Returns("millimeter");
 
           var unitAdjuster = new UnitAdjuster(mockedDatabaseAccessor);
           var newUnitQuantity = unitAdjuster.ToBaseUnitAmount(mockedUnit);
