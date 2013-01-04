@@ -64,5 +64,19 @@ namespace UnitTests.UnitAdjusterTests
 
           Assert.AreEqual(4000, newUnitQuantity);
        }
+
+       [Test]
+       public void ReturnOneMeterWhenGivenOneHundredCentimeters()
+       {
+           Mock.Arrange(() => mockedDatabaseAccessor.GetBaseUnitRatioFromUnitName("centimeter")).Returns(.01);
+
+           Mock.Arrange(() => mockedUnit.Quantity).Returns(100);
+           Mock.Arrange(() => mockedUnit.Name).Returns("centimeter");
+
+           var unitAdjuster = new UnitAdjuster(mockedDatabaseAccessor);
+           var newUnitQuantity = unitAdjuster.ToBaseUnitAmount(mockedUnit);
+
+           Assert.AreEqual(1, newUnitQuantity);
+       }
     }
 }
