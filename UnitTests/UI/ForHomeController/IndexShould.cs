@@ -9,12 +9,33 @@ namespace UnitTests.UI.ForHomeController
    [TestFixture]
    class IndexShould
    {
+      private HomeController homeController;
+      
+      [SetUp]
+      public void SetUp()
+      {
+         homeController = new HomeController();
+      }
+
       [Test]
       public void ReturnTheIndexView()
       {
-         var homeController = new HomeController();
          ViewResult viewResult = (ViewResult)homeController.Index();
          Assert.AreEqual("Index", viewResult.ViewName);
+      }
+
+      [Test]
+      public void ReturnTheAboutView()
+      {
+         ViewResult viewResult = (ViewResult)homeController.About();
+         Assert.AreEqual("About", viewResult.ViewName);
+      }
+
+      [Test]
+      public void ReturnTheContactView()
+      {
+         ViewResult viewResult = (ViewResult)homeController.Contact();
+         Assert.AreEqual("Contact", viewResult.ViewName);
       }
    }
 }
