@@ -170,6 +170,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Styles\mobile\Site.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

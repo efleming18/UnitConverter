@@ -10,6 +10,7 @@ namespace UI.AppStart {
                         "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new StyleBundle("~/Styles/css").Include("~/Styles/site.css"));
+            bundles.Add(new StyleBundle("~/Styles/Mobile/css").Include("~/Styles/Mobile/site.css"));
         }
     }
 }

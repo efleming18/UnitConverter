@@ -53,9 +53,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{5582241B-9EC1-4BAF-B68B-C8FDFCA43D37}</Project>
