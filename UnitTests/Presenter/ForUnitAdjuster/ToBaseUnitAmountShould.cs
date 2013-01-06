@@ -6,7 +6,7 @@ using Presenter.Interfaces;
 using Presenter.Logic;
 using Models;
 
-namespace UnitTests.PresenterTests.UnitAdjusterTests 
+namespace UnitTests.Presenter.ForUnitAdjuster 
 {
    [TestFixture]
    public class ToBaseUnitAmountShould {

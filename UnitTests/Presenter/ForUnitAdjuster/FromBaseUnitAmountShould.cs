@@ -5,7 +5,7 @@ using Telerik.JustMock;
 using Presenter.Interfaces;
 using Presenter.Logic;
 
-namespace UnitTests.PresenterTests.UnitAdjusterTests 
+namespace UnitTests.Presenter.ForUnitAdjuster 
 {
    [TestFixture]
    class FromBaseUnitAmountShould

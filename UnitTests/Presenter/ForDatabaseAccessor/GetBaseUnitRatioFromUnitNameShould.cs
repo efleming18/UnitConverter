@@ -5,7 +5,7 @@ using Telerik.JustMock;
 using Presenter.Logic;
 using Models;
 
-namespace UnitTests.PresenterTests.DatabaseAccessorTests
+namespace UnitTests.Presenter.ForDatabaseAccessor
 {
    [TestFixture]
    class GetBaseUnitRatioFromUnitNameShould
