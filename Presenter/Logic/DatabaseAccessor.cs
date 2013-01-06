@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
-using UnitConverter.Interfaces;
-using UnitConverter.Models;
+using Presenter.Interfaces;
+using Presenter.Models;
 
-namespace UnitConverter.Logic
+namespace Presenter.Logic
 {
    public class DatabaseAccessor : IDatabaseAccessor
    {

@@ -54,13 +54,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UnitConverter\UnitConverter.csproj">
-      <Project>{2d8631e6-4062-47b4-9f55-9e0d57c4fad3}</Project>
-      <Name>UnitConverter</Name>
-    </ProjectReference>
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\Presenter\Presenter.csproj">
+      <Project>{2d8631e6-4062-47b4-9f55-9e0d57c4fad3}</Project>
+      <Name>Presenter</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

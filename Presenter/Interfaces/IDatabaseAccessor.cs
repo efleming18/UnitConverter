@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnitConverter.Interfaces
+namespace Presenter.Interfaces
 {
    public interface IDatabaseAccessor
    {

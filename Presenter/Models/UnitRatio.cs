@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnitConverter.Models 
+namespace Presenter.Models 
 {
    public class UnitRatio
    {

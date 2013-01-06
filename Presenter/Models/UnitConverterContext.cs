@@ -1,6 +1,6 @@
 using System.Data.Entity;
 
-namespace UnitConverter.Models
+namespace Presenter.Models
 {
    public class UnitConverterContext : DbContext {
       public DbSet<UnitRatio> UnitRatio { get; set; }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using Telerik.JustMock;
-using UnitConverter.Interfaces;
-using UnitConverter.Logic;
-using UnitConverter.Models;
+using Presenter.Interfaces;
+using Presenter.Logic;
+using Presenter.Models;
 
 namespace UnitTests.UnitAdjusterTests 
 {
