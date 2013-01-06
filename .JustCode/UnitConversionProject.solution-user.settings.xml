@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="3dffeea3-2eca-44f1-a38a-3c8c89e9f49b">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>C:\Dev\UnitConverter\UI\Controllers\HomeController.cs</Path>
+        <ProjectFullName>C:\Dev\UnitConverter\UI\UI.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Unknown member &lt;/C&gt;Message&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>13</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Unknown member &lt;/C&gt;Message&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>20</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Unknown member &lt;/C&gt;Message&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>27</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Unknown member &lt;/C&gt;Message&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>11</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Unknown member &lt;/C&gt;Message&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>18</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Unknown member &lt;/C&gt;Message&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>25</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Dev\UnitConverter\UI\Filters\InitializeSimpleMembershipAttribute.cs</Path>
+        <ProjectFullName>C:\Dev\UnitConverter\UI\UI.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>120</Column>
+          <Text>Named arguments are not permitted</Text>
+          <Line>41</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Dev\UnitConverter\UI\App_Start\WebApiConfig.cs</Path>
+        <ProjectFullName>C:\Dev\UnitConverter\UI\UI.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Named arguments are not permitted</Text>
+          <Line>14</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Named arguments are not permitted</Text>
+          <Line>13</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Named arguments are not permitted</Text>
+          <Line>15</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Dev\UnitConverter\UI\Views\Home\Contact.cshtml</Path>
+        <ProjectFullName>C:\Dev\UnitConverter\UI\UI.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>18</Column>
+          <Text>Unknown member &lt;/C&gt;Title&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>18</Column>
+          <Text>Unknown member &lt;/C&gt;Message&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>7</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Unknown member &lt;/C&gt;Title&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>2</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Dev\UnitConverter\UI\Views\Home\Index.cshtml</Path>
+        <ProjectFullName>C:\Dev\UnitConverter\UI\UI.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Unknown member &lt;/C&gt;Title&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>2</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Dev\UnitConverter\UI\Views\Shared\_Layout.cshtml</Path>
+        <ProjectFullName>C:\Dev\UnitConverter\UI\UI.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>25</Column>
+          <Text>Unknown member &lt;/C&gt;Title&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Dev\UnitConverter\UI\Views\Home\About.cshtml</Path>
+        <ProjectFullName>C:\Dev\UnitConverter\UI\UI.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Unknown member &lt;/C&gt;Title&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>2</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>18</Column>
+          <Text>Unknown member &lt;/C&gt;Title&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>6</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>18</Column>
+          <Text>Unknown member &lt;/C&gt;Message&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>7</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Dev\UnitConverter\UI\Views\Shared\Error.cshtml</Path>
+        <ProjectFullName>C:\Dev\UnitConverter\UI\UI.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>13</Column>
+          <Text>Unknown member &lt;/C&gt;Title&lt;//C&gt; of &lt;/C&gt;&lt;//C&gt;</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Dev\UnitConverter\UI\AppStart\WebApiConfig.cs</Path>
+        <ProjectFullName>C:\Dev\UnitConverter\UI\UI.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Named arguments are not permitted</Text>
+          <Line>13</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Named arguments are not permitted</Text>
+          <Line>14</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Named arguments are not permitted</Text>
+          <Line>15</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Named arguments are not permitted</Text>
+          <Line>11</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Named arguments are not permitted</Text>
+          <Line>12</Line>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <Path>C:\Dev\UnitConverter\UI\Global.asax.cs</Path>
+        <ProjectFullName>C:\Dev\UnitConverter\UI\UI.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>18</Column>
+          <Text>Show base types</Text>
+          <Line>14</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>18</Column>
+          <Text>Type name does not match file name</Text>
+          <Line>14</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

@@ -7,7 +7,7 @@ namespace Presenter.Logic
 {
    public class UnitAdjuster
    {
-      private IDatabaseAccessor databaseAccessor;
+      private readonly IDatabaseAccessor databaseAccessor;
 
       public UnitAdjuster(IDatabaseAccessor databaseAccessor)
       {

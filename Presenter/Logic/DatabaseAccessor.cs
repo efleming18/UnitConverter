@@ -7,7 +7,7 @@ namespace Presenter.Logic
 {
    public class DatabaseAccessor : IDatabaseAccessor
    {
-      private UnitConverterContext database;
+      private readonly UnitConverterContext database;
 
       public DatabaseAccessor(UnitConverterContext database)
       {
