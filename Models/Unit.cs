@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Presenter.Models
-{
+namespace Models {
    public class Unit
    {
       public string Name { get; private set; }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Presenter.Interfaces;
-using Presenter.Models;
+using Models;
 
 namespace Presenter.Logic
 {

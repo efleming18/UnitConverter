@@ -5,7 +5,7 @@ using NUnit.Framework;
 using Telerik.JustMock;
 using Presenter.Interfaces;
 using Presenter.Logic;
-using Presenter.Models;
+using Models;
 
 namespace UnitTests.UnitAdjusterTests
 {

@@ -3,7 +3,7 @@ using System.Linq;
 using NUnit.Framework;
 using Telerik.JustMock;
 using Presenter.Logic;
-using Presenter.Models;
+using Models;
 
 namespace UnitTests.DatabaseAccessorTests
 {
