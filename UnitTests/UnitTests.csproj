@@ -48,9 +48,9 @@
     <Reference Include="Telerik.JustMock, Version=2012.3.1016.3, Culture=neutral, PublicKeyToken=8b221631f7271365, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseAccessorTests\GetBaseUnitRatioFromUnitNameShould.cs" />
-    <Compile Include="UnitAdjusterTests\FromBaseUnitAmountShould.cs" />
-    <Compile Include="UnitAdjusterTests\ToBaseUnitAmountShould.cs" />
+    <Compile Include="PresenterTests\DatabaseAccessorTests\GetBaseUnitRatioFromUnitNameShould.cs" />
+    <Compile Include="PresenterTests\UnitAdjusterTests\FromBaseUnitAmountShould.cs" />
+    <Compile Include="PresenterTests\UnitAdjusterTests\ToBaseUnitAmountShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
