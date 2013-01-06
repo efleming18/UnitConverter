@@ -7,8 +7,8 @@
     <ProjectGuid>{2D8631E6-4062-47B4-9F55-9E0D57C4FAD3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UnitConverter</RootNamespace>
-    <AssemblyName>UnitConverter</AssemblyName>
+    <RootNamespace>Presenter</RootNamespace>
+    <AssemblyName>Presenter</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

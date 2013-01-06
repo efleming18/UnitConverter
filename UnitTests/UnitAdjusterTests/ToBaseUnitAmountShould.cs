@@ -14,7 +14,6 @@ namespace UnitTests.UnitAdjusterTests
     {
        Unit mockedUnit;
        IDatabaseAccessor mockedDatabaseAccessor;
-       readonly Dictionary<string, double> toMeterRatio;
 
        [SetUp]
        public void SetUp()
