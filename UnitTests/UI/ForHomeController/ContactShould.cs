@@ -7,15 +7,14 @@ using UI.Controllers;
 namespace UnitTests.UI.ForHomeController
 {
    [TestFixture]
-   class IndexShould
+   class ContactShould
    {
       [Test]
-      public void ReturnTheIndexView()
+      public void ReturnTheContactView()
       {
          var homeController = new HomeController();
-         ViewResult viewResult = (ViewResult)homeController.Index();
-         Assert.AreEqual("Index", viewResult.ViewName);
+         ViewResult viewResult = (ViewResult)homeController.Contact();
+         Assert.AreEqual("Contact", viewResult.ViewName);
       }
-
    }
 }
