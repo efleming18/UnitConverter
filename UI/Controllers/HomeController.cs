@@ -1,14 +1,26 @@
 ﻿using System;
 using System.Linq;
 using System.Web.Mvc;
+using Presenter;
+using Presenter.Interfaces;
 
 namespace UI.Controllers
 {
    public class HomeController : Controller {
 
-      public ActionResult Index() {
-         ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+      IConversionPresenter conversionPresenter;
 
+      public HomeController()
+      {
+         this.conversionPresenter = new ConversionPresenter();
+      }
+
+      public HomeController(IConversionPresenter conversionPresenter)
+      {
+         this.conversionPresenter = conversionPresenter;
+      }
+
+      public ActionResult Index() {
          return View("Index");
       }
 
@@ -22,6 +34,13 @@ namespace UI.Controllers
          ViewBag.Message = "Your contact page.";
 
          return View("Contact");
+      }
+
+      [HttpGet]
+      public ActionResult ConvertUnit(string fromUnit)
+      {
+         conversionPresenter.ConvertUnit(fromUnit);
+         return View("Index");
       }
    }
 }

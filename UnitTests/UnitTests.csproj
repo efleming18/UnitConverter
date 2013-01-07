@@ -55,6 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\ForHomeController\AboutShould.cs" />
     <Compile Include="UI\ForHomeController\ContactShould.cs" />
+    <Compile Include="UI\ForHomeController\ConvertUnitShould.cs" />
     <Compile Include="UI\ForHomeController\IndexShould.cs" />
   </ItemGroup>
   <ItemGroup>

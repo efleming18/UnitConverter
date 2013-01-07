@@ -16,6 +16,5 @@ namespace UnitTests.UI.ForHomeController
          ViewResult viewResult = (ViewResult)homeController.Index();
          Assert.AreEqual("Index", viewResult.ViewName);
       }
-
    }
 }

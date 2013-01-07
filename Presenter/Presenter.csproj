@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConversionPresenter.cs" />
+    <Compile Include="Interfaces\IConversionPresenter.cs" />
     <Compile Include="Interfaces\IDatabaseAccessor.cs" />
     <Compile Include="Logic\DatabaseAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,6 +1,12 @@
 ﻿@{
     ViewBag.Title = "Home";
 }
-Enter the unit that you wish to be converted
-@Html.TextBox("FromUnit")
 
+@ViewBag.Message
+
+@using (Html.BeginForm("ConvertUnit", "Home", FormMethod.Get))
+{
+    @Html.Label("Enter the unit that you wish to be converted")
+    @Html.TextBox("fromUnit")
+    <input type="submit" value="Convert Unit" />
+}
